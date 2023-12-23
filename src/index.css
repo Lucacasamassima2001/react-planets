@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/public/starry_sky_stars_space_143776_1080x1920.jpg");
+  font-family: "Quicksand", sans-serif;
+}
+
+main {
+  color: white;
+}
+
+header {
+  margin-top: 2em;
+  padding: 1em;
+}
+
+header > h1 {
+  text-align: center;
+  font-size: 6em;
+  color: white;
+}
+
+header > p {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 2em;
+  color: white;
+}
+
+.Planet-List {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+li > button {
+  width: 4em;
+  font-size: 2em;
+  background-color: black;
+  color: grey;
+  border-radius: 30px;
+  border: 1px solid black;
+  transition: linear 0.5s;
+}
+
+li > button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.default-subtitle {
+  width: 10em;
+  margin: auto;
+  margin-top: 2em;
+  font-size: 3em;
+}
+
+.Planet-container {
+  padding: 1em;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.Planet-container > h1 {
+  font-size: 5em;
+}
+
+.Planet-container > p {
+  font-size: 2em;
+  margin-bottom: 3em;
+}
+
+img {
+  height: 500px;
+  border-radius: 50%;
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  font-size: 2em;
+}
