@@ -106,6 +106,10 @@ img {
 
 .button-img {
   height: 80px;
+  transition: linear 0.5s;
+}
+.button-img:hover {
+  height: 100px;
 }
 
 .specs {

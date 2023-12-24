@@ -14,7 +14,7 @@ function App() {
     <div id="first-container">
       <Header></Header>
       <main>
-        <section className="Planet-List animate__animated animate__fadeIn">
+        <section className="Planet-List animate__animated animate__fadeIn animate__delay-1s">
           <ul>
             <TabButton onSelect={() => HandleClick([0])} {...planetsData[0]} />
             <TabButton onSelect={() => HandleClick([1])} {...planetsData[1]} />
