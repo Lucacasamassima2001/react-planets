@@ -1,5 +1,4 @@
 import Header from "../components/Header/Header";
-// import Planet from "../components/Planet";
 import TabButton from "../components/TabButton";
 import { planetsData } from "../planets";
 import { useState } from "react";
@@ -15,24 +14,24 @@ function App() {
     <div id="first-container">
       <Header></Header>
       <main>
-        <section className="Planet-List animate__animated animate__flash">
+        <section className="Planet-List animate__animated animate__fadeIn">
           <ul>
-            <TabButton onSelect={() => HandleClick([0])}>Mercury</TabButton>
-            <TabButton onSelect={() => HandleClick([1])}>Venus</TabButton>
-            <TabButton onSelect={() => HandleClick([2])}>Earth</TabButton>
-            <TabButton onSelect={() => HandleClick([3])}>Mars</TabButton>
-            <TabButton onSelect={() => HandleClick([4])}>Jupiter</TabButton>
-            <TabButton onSelect={() => HandleClick([5])}>Saturn</TabButton>
-            <TabButton onSelect={() => HandleClick([6])}>Uranus</TabButton>
-            <TabButton onSelect={() => HandleClick([7])}>Neptune</TabButton>
-            <TabButton onSelect={() => HandleClick([8])}>Pluto</TabButton>
-            <TabButton onSelect={() => HandleClick([9])}>Ceres</TabButton>
+            <TabButton onSelect={() => HandleClick([0])} {...planetsData[0]} />
+            <TabButton onSelect={() => HandleClick([1])} {...planetsData[1]} />
+            <TabButton onSelect={() => HandleClick([2])} {...planetsData[2]} />
+            <TabButton onSelect={() => HandleClick([3])} {...planetsData[3]} />
+            <TabButton onSelect={() => HandleClick([4])} {...planetsData[4]} />
+            <TabButton onSelect={() => HandleClick([5])} {...planetsData[5]} />
+            <TabButton onSelect={() => HandleClick([6])} {...planetsData[6]} />
+            <TabButton onSelect={() => HandleClick([7])} {...planetsData[7]} />
+            <TabButton onSelect={() => HandleClick([8])} {...planetsData[8]} />
+            <TabButton onSelect={() => HandleClick([9])} {...planetsData[9]} />
           </ul>
         </section>
         <section>
           {!selectedPlanet ? (
             <p className="default-subtitle animate__animated animate__infinite animate__headShake">
-              Explore the galaxy...
+              `One small step for man, one giant leap for mankind...`
             </p>
           ) : (
             <div className="Planet-container animate__animated  animate__backInUp">

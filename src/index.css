@@ -60,6 +60,10 @@ li > button {
   border-radius: 30px;
   border: 1px solid black;
   transition: linear 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 
 li > button:hover {
@@ -68,10 +72,11 @@ li > button:hover {
 }
 
 .default-subtitle {
-  width: 10em;
+  text-align: center;
+  width: 20em;
   margin: auto;
   margin-top: 2em;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .Planet-container {
@@ -97,6 +102,10 @@ li > button:hover {
 img {
   height: 500px;
   border-radius: 50%;
+}
+
+.button-img {
+  height: 80px;
 }
 
 .specs {
